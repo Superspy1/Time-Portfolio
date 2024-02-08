@@ -4,6 +4,8 @@ body {
     font-family: 'JetBrains Mono', sans-serif;
     padding: 0;
     margin: 0;
+    background-image: radial-gradient(circle, #333 1px, transparent 1px);
+    background-size: 20px 20px;
 }
 
 section {
@@ -11,6 +13,7 @@ section {
     place-items: center;
     align-content: center;
     min-height: 100vh;
+    margin: 10px;
 }
 
 .hidden {
@@ -24,4 +27,71 @@ section {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
+}
+
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.logo img {
+    width: 100px;  
+    height: auto;
+    margin: 10px 10px;
+}
+
+#timer {
+    color: #84f49e;
+    font-size: 40px;
+    margin: 0; /* remove default paragraph margins */
+}
+
+.split {
+    color: white;
+    font-size: 20px;
+    margin: 0; /* remove default paragraph margins */
+}
+
+#timer-container {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* or any color you prefer */
+    padding: 10px;
+    border-radius: 5px; /* optional, for rounded corners */
+    z-index: 1;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    text-align: center;
+    padding: 10px;
+}
+
+.project img {
+    width: 200px;  
+    height: auto;
+    margin: 10px 10px;
+}
+
+h1 {
+    color: #84f49e;
+}
+
+.gitlab-button {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.gitlab-button:hover {
+    opacity: 0.7;
 }
