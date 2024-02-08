@@ -12,29 +12,29 @@
 </head>
 <body>
     <div id="timer-container">
-        <p class="split">Home</p>
-        <p id="about-me" class="split">About Me</p>
-        <p class="split">Projects</p>
-        <p class="split">Skills/Contact</p>
+        <div><a href="#home" class="split scroll-link noUnderline">Home</a></div>
+        <div><a id="about-me" href="#about-me1" class="split scroll-link noUnderline">About Me</a></div>
+        <div><a id="projects" href="#projects1" class="split scroll-link noUnderline">Projects</a></div>
+        <div><a id="skills" href="#skills1" class="split scroll-link noUnderline">Skills/Contact</a></div>
         <p id="timer">00:00.000</p>
     </div>
 
-    <section class="hidden">
+    <section class="hidden" id="home">
         <h1>Marcus Ryan</h1>
         <p>Personal Portfolio Speedrun!</p>
     </section>
 
-    <section class="hidden">
+    <section class="hidden" id="about-me1">
         <h1>About Me</h1>
         <div class="logos">
             <p>Hi, I'm Marcus!<br> I am currently studying computer science at UNSW. <br> My hobbies are running, cubing, gaming and watching random videos.</p>
-            <div class="logo hidden">
+            <div class="logo hidden" id="logo1">
                 <img src="https://media.tenor.com/pXEDrZV2s4QAAAAi/star-spinning.gif">
             </div>
         </div>
     </section>
 
-    <section class="hidden">
+    <section class="hidden" id="projects1">
         <h1>Projects</h1>
         <div class="projects">
             <div class="project">
@@ -53,16 +53,22 @@
                 <h2>Navigation Software</h2>
                 <img src="https://media.tenor.com/pXEDrZV2s4QAAAAi/star-spinning.gif">
             </div>
+            <div class="logo hidden" id="logo2">
+                <img src="https://media.tenor.com/pXEDrZV2s4QAAAAi/star-spinning.gif">
+            </div>
         </div>
     </section>
 
-    <section class="hidden">
+    <section class="hidden" id="skills1">
         <h1>Skills and Contact</h1>
-        <p> - C <br> - JavaScript/TypeScript <br> - HTML <br> - CSS <br> - Git </p>
+        <p> - C <br> - JavaScript/TypeScript <br> - HTML <br> - CSS <br> - Git <br> <br> - marcus.ryan143@gmail.com</p>
 
         <a href="https://github.com/Superspy1" target="_blank">
             <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitLab Logo" class="gitlab-button">
         </a>
+        <div class="logo hidden" id="logo3">
+            <img src="https://media.tenor.com/pXEDrZV2s4QAAAAi/star-spinning.gif">
+        </div>
     </section>
 </body>
 </html>
