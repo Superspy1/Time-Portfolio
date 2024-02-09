@@ -67,7 +67,7 @@ function handleClick(logo, element, name) {
     if (clickCount === 3) { // if all logos have been clicked
         clearInterval(timerInterval); // stop the timer
         let newAudio = new Audio(anotherSound);
-        newAudio.volume = 0.25;
+        newAudio.volume = 0.15;
         newAudio.play();
     }
 }
