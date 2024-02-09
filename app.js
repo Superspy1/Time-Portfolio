@@ -66,11 +66,15 @@ function handleClick(logo, element, name) {
     clickCount++;
     if (clickCount === 3) { // if all logos have been clicked
         clearInterval(timerInterval); // stop the timer
+        let newAudio = new Audio(anotherSound);
+        newAudio.volume = 0.25;
+        newAudio.play();
     }
 }
 
 
 let sound = 'sources/sm64_red_coin_jp.wav';
+let anotherSound = 'sources/sm64_high_score.wav';
 
 logo1.clickEvent = () => handleClick(logo1, aboutMeElement, 'About Me');
 logo2.clickEvent = () => handleClick(logo2, projectsElement, 'Projects');
