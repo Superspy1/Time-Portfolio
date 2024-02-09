@@ -39,6 +39,15 @@ section {
     width: 100px;  
     height: auto;
     margin: 10px 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo :not(#nohover):hover {
+    transform: scale(1.2);
+}
+  
+  .logo:active {
+    transform: scale(0.8);
 }
 
 #timer {
@@ -66,22 +75,23 @@ section {
 .projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .project {
     text-align: center;
-    padding: 10px;
+    padding: 5px 100px;
 }
 
 .project img {
-    width: 200px;  
-    height: auto;
+    width: 475px;  
+    height: 250px;
     margin: 10px 10px;
 }
 
 h1 {
     color: #84f49e;
+    font-size: 40px;
 }
 
 .gitlab-button {
@@ -117,4 +127,41 @@ h1 {
 
 .noUnderline {
     text-decoration: none;
+}
+
+#logo2 {
+    flex-basis: 100%;
+}
+
+@media (max-width: 600px) {
+    .project {
+        padding: 50px;
+    }
+
+    .project img {
+        width: 100%;  
+        height: auto;
+    }
+
+    .title h1 {
+        font-size: 20px; /* Adjust the font size for smaller screens */
+        padding: 10px;  /* Adjust the padding as needed */
+        border-top: 2px solid white;
+    }
+
+    .title p {
+        font-style: italic;
+        border-bottom: 2px solid white;
+    }
+}
+
+.title h1 {
+    font-size: 4vw;
+    padding: 10px 5vw;
+    border-top: 2px solid white;
+}
+
+.title p {
+    font-style: italic;
+    border-bottom: 2px solid white;
 }

@@ -70,7 +70,7 @@ function handleClick(logo, element, name) {
 }
 
 
-let sound = 'sm64_red_coin_jp.wav';
+let sound = 'sources/sm64_red_coin_jp.wav';
 
 logo1.clickEvent = () => handleClick(logo1, aboutMeElement, 'About Me');
 logo2.clickEvent = () => handleClick(logo2, projectsElement, 'Projects');
